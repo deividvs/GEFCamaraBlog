@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require sweetalert2
+//= require jquery.validate
+//= require jquery.validate.additional-methods
+//= require jquery.validate.localization/messages_pt_BR
 //= require_tree .

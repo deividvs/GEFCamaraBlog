@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'high_voltage', '~> 3.0.0'
 gem 'devise'
 gem 'rails_admin', '~> 1.0'
+gem 'simple_form'
+gem 'sweetalert2'
+gem 'jquery-validation-rails'
