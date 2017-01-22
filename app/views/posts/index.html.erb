@@ -19,16 +19,14 @@
             </div>
             <div class="row">
               <div class="col-md-12">
-                <a href="#" class="thumbnail">
-                  <%= link_to post_path(post) do %>
-                    <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
-                  <% end %>
-                </a>
+                <%= link_to post_path(post), class: 'thumbnail' do %>
+                  <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
+                <% end %>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <%= truncate(strip_tags(post.body), length: 100) %> <%= link_to 'Leia mais...', post_path(post) %>
+                <%= truncate(strip_tags(post.body), length: 100) %> <%= link_to 'Leia mais', post_path(post) %>
               </div>
             </div>
           </div>
