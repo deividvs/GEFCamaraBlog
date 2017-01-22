@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
   belongs_to :role
 
-  before_create :set_default_role
+  before_validation :set_default_role
 
   def admin?
     self.role_id == 4
