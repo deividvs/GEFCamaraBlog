@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gamara</title>
+
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- Partial -->
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <%= image_tag 'logo.png', alt: 'Logo', class: 'logo' %>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+    <!-- End Partial -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <!-- Lista de post  -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="page-header">
+                    <h3>
+                      Titulo
+                    </h3>
+                    <small><i class="fa fa-calendar"> 10/01/2017 10:30 AM</i></small>
+                    <small class="autor"><i class="fa fa-user"> Murilo Lucas</i></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <a href="#" class="thumbnail">
+                    <%= image_tag 'img.jpeg', alt: 'Noticia img', class: 'noticia' %>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque molestie at mauris nec elementum.
+                  Vivamus varius lacus consequat sodales vestibulum...
+                  <a href="/">Leia mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Paginação-->
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End Paginação -->
+        </div>
+        <div class="col-md-4">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
+</html>
