@@ -10,7 +10,7 @@
               <div class="col-md-12">
                 <div class="page-header">
                   <h3>
-                    <%= post.title.to_s.capitalize %>
+                    <%= link_to post.title.to_s.capitalize, post_path(post) %>
                   </h3>
                   <small><i class="fa fa-calendar"> <%= post.created_at.to_formatted_s(:short) %></i></small>
                   <small class="autor"><i class="fa fa-user"> Equipe GAMARA</i></small>
@@ -20,7 +20,9 @@
             <div class="row">
               <div class="col-md-12">
                 <a href="#" class="thumbnail">
-                  <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
+                  <%= link_to post_path(post) do %>
+                    <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
+                  <% end %>
                 </a>
               </div>
             </div>
