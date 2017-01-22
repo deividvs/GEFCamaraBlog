@@ -2,7 +2,7 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <%= image_tag 'logo.png', alt: 'Logo', class: 'logo' %>
         </a>
       </div>
@@ -12,7 +12,7 @@
             <%= link_to '7 DIAS PARA O SUCESSO', root_path %>
           </li>
           <li class="<%= is_active('posts', 'index') %>">
-            <%= link_to 'Blog', '#' %>
+            <%= link_to 'Blog', posts_path %>
           </li>
           <li class="<%= is_active_hv('pages', 'sobre') %>">
             <%= link_to 'Sobre', page_path('sobre') %>

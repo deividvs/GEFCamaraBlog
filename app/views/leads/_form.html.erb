@@ -2,7 +2,7 @@
   <h3 class="text-center mt0 mb0">Receber os conteúdos</h3>
   <% @lead = Lead.new %>
   <div class="form-lead">
-    <%= simple_form_for @lead, url: lead_path, method: 'POST', remote: true, html: { class: 'form-horizontal' } do |f| %>
+    <%= simple_form_for @lead, url: leads_path, method: 'POST', remote: true, html: { class: 'form-horizontal' } do |f| %>
         <%= f.error_notification %>
         <%= f.input :first_name, required: true, class: 'col-md-6', label: 'Nome', placeholder: 'Nome' %>
         <%= f.input :last_name, required: true, class: 'col-md-6', label: 'Sobrenome', placeholder: 'Sobrenome' %>
