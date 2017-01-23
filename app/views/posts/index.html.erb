@@ -4,7 +4,7 @@
 <% if @posts.size > 0 %>
   <div class="flex-row row blog">
     <div class="col-md-12">
-        <% @posts.each_with_index do |post, index| %>
+        <% @posts.each do |post| %>
         <!-- Lista de post  -->
             <div class="col-sm-6 col-md-4 post">
               <div class="thumbnail">
