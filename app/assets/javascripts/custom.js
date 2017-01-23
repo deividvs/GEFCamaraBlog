@@ -7,6 +7,18 @@
 }(document, 'script', 'facebook-jssdk'));
 
 
+
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:396206,hjsv:5};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+
+
+
 function DiffDate(endTime){
     var dateDiff = Date.parse(endTime) - Date.parse(new Date());
 
