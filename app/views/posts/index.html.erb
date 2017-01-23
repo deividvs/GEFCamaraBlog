@@ -21,7 +21,6 @@
                   <span class="data pull-right"><%= post.created_at.to_formatted_s(:short) %></span>
               </div>
             </div>
-            <%= '<div class="clear"></div>'.html_safe if index % 2 === 0 %>
         <% end %>
     </div>
 <% else %>
