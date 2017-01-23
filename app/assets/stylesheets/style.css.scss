@@ -340,6 +340,12 @@ h2.timer {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .blog .post{
+        max-width: initial;
+    }
+}
+
 
 /*Override bootstrap*/
 
