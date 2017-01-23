@@ -48,7 +48,7 @@ hr {
     }
 
     .post{
-        margin: 10px 0;
+        margin: 10px 0 50px 0;
     }
 }
 
@@ -224,6 +224,7 @@ h2.timer {
 	flex-wrap: wrap;
 }
 .flex-row > [class*='col-'] {
+	display: flex;
 	flex-direction: row;
     flex-flow: row wrap;
 }
