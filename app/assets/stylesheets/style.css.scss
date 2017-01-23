@@ -380,6 +380,10 @@ h2.timer {
     .blog .post{
         max-width: initial;
     }
+
+    .page-header{
+        min-height:150px;
+    }
 }
 
 @media screen and (max-width: 375px) {
