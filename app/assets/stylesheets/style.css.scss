@@ -31,6 +31,13 @@ body{
             color: #e6be21;
         }
     }
+
+    p a{
+        color: #e6be21;
+    }
+    a:hover{
+        color: #33235e;
+    }
 }
 
 .blog-content{
@@ -176,7 +183,7 @@ footer{
 
 .info {
     padding: 10px;
-    background: url(/assets/bg-pattern-369e2fea2fdb00eb15301e187e55aa4e7cf4854dc7b665f43b874093c10cddd7.png), linear-gradient(to left, #35235f, #112c54);
+    background: linear-gradient(to left, #35235f, #112c54);
     border: 1px solid #ecf0f1;
     border-top: none;
 
