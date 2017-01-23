@@ -5,7 +5,7 @@
     <%= simple_form_for @lead, url: leads_path, method: 'POST', remote: true, html: { class: 'form-horizontal' } do |f| %>
         <%= f.error_notification %>
         <%= f.input :first_name, required: true, class: 'col-md-6', label: false, placeholder: 'Nome' %>
-        <!-- <%= f.input :last_name, required: true, class: 'col-md-6', label: 'Sobrenome', placeholder: 'Sobrenome' %> -->
+        <%= f.input :last_name, required: true, class: 'col-md-6', label: false, placeholder: 'Sobrenome' %>
         <%= f.input :email, required: true, label: false, placeholder: 'Email' %>
         <div class="text-center">
           <%= f.button :submit, 'Inscrever', class: 'btn-success' %>

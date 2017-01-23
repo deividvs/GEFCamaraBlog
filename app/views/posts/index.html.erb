@@ -2,28 +2,26 @@
 <%= content_for :description, 'Blog - 7 DIAS PARA O SUCESSO' %>
 
 <% if @posts.size > 0 %>
-    <% @posts.each do |post| %>
-        <!-- Lista de post  -->
-        <div class="row">
-          <div class="col-md-12">
-              <div class="row">
-                  <div class="col-sm-6 col-md-4">
-                      <div class="thumbnail">
-                        <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
-                        <div class="caption">
-                          <h4><%= link_to post.title.to_s.capitalize, post_path(post) %></h4>
-                          <p><%= truncate(strip_tags(post.body), length: 100) %> <%= link_to 'Leia mais', post_path(post) %></p>
-                        </div>
-                      </div>
-                      <div class="info">
-                          <span class="hash">#marketing</span>
-                          <span class="data pull-right"><%= post.created_at.to_formatted_s(:short) %></span>
-                      </div>
+<div class="row blog">
+    <div class="col-md-12">
+            <% @posts.each do |post| %>
+            <!-- Lista de post  -->
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
+                    <div class="caption">
+                      <h4><%= link_to post.title.to_s.capitalize, post_path(post) %></h4>
+                      <p><%= truncate(strip_tags(post.body), length: 100) %> <%= link_to 'Leia mais', post_path(post) %></p>
+                    </div>
                   </div>
-              </div>
-          </div>
+                  <div class="info">
+                      <span class="hash">#marketing</span>
+                      <span class="data pull-right"><%= post.created_at.to_formatted_s(:short) %></span>
+                  </div>
+                </div>
+            <% end %>
         </div>
-    <% end %>
+    </div>
 <% else %>
 
 <% end %>
