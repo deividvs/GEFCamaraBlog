@@ -20,6 +20,9 @@ header {
         text-align: left;
         padding: 0;
         height: 100vh;
+        .col-md-12{
+            min-width: 400px;
+        }
     }
 
     .header-content .header-content-inner {
@@ -43,7 +46,9 @@ header {
             border: none;
         }
     }
+
 }
+
 
 .offset-left{
     position: fixed;
@@ -58,6 +63,7 @@ header {
 
 .sidebar{
     background-color: #ffffff;
+    min-height: 800px;
 
     ul{
         list-style: none;
@@ -191,7 +197,7 @@ aside{
 
 .form-lead{
     .form-control{
-        background: transparent;
+        background: rgba(255, 255, 255, 0.1);
         color: white;
     }
     .form-control:focus{
