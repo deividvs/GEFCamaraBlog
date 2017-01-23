@@ -4,7 +4,7 @@
 <% if @posts.size > 0 %>
 <div class="flex-row row blog">
     <div class="col-md-12">
-            <% @posts.each do |post, index| %>
+            <% @posts.each_with_index do |post, index| %>
             <!-- Lista de post  -->
                 <div class="col-sm-6 col-md-4 post">
                   <div class="thumbnail">
@@ -20,8 +20,9 @@
                       <span class="hash"><%= post.category %></span>
                       <span class="data pull-right"><%= post.created_at.to_formatted_s(:short) %></span>
                   </div>
-                </div>
 
+
+                 <%= '<div class="clear"></div>'.html_safe if index % 3 == 0 %>
 
             <% end %>
         </div>
