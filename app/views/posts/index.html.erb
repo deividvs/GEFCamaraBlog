@@ -2,31 +2,28 @@
 <%= content_for :description, 'Blog - 7 DIAS PARA O SUCESSO' %>
 
 <% if @posts.size > 0 %>
-<div class="flex-row row blog">
-    <div class="col-md-12">
-            <% @posts.each_with_index do |post, index| %>
-            <!-- Lista de post  -->
-                <div class="col-sm-6 col-md-4 post">
-                  <div class="thumbnail">
-                    <%= link_to post_path(post) do %>
-                      <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
-                    <% end %>
-                    <div class="caption">
-                      <h4><%= link_to post.title.to_s.capitalize, post_path(post) %></h4>
-                      <p><%= truncate(strip_tags(post.body), length: 100) %> <%= link_to 'Leia mais', post_path(post) %></p>
-                    </div>
-                  </div>
-                  <div class="info">
-                      <span class="hash"><%= post.category %></span>
-                      <span class="data pull-right"><%= post.created_at.to_formatted_s(:short) %></span>
-                  </div>
 
+        <% @posts.each_with_index do |post, index| %>
+            <%= '<div class="flex-row row blog"><div class="col-md-12">'.html_safe if index % 2 === 0 %>
+        <!-- Lista de post  -->
+            <div class="col-sm-6 col-md-4 post">
+              <div class="thumbnail">
+                <%= link_to post_path(post) do %>
+                  <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
+                <% end %>
+                <div class="caption">
+                  <h4><%= link_to post.title.to_s.capitalize, post_path(post) %></h4>
+                  <p><%= truncate(strip_tags(post.body), length: 100) %> <%= link_to 'Leia mais', post_path(post) %></p>
+                </div>
+              </div>
+              <div class="info">
+                  <span class="hash"><%= post.category %></span>
+                  <span class="data pull-right"><%= post.created_at.to_formatted_s(:short) %></span>
+              </div>
+            </div>
+            <%= '</div></div>'.html_safe if index % 2 === 0 %>
+        <% end %>
 
-                 <%= '<div class="clear"></div>'.html_safe if index % 2 === 0 %>
-
-            <% end %>
-        </div>
-    </div>
 <% else %>
 
 <% end %>
