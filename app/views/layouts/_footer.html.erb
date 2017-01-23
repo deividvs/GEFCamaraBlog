@@ -1,10 +1,50 @@
 <footer>
-
+    <div class="row footer-image">
+        <div class="container">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <a href="/"><%= image_tag 'logo_negativo.png', alt: '7 dias para o sucesso', class: 'logo' %></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p style="padding: 0 10px;">
+                            Somos uma iniciativa sem fins lucrativos que terá 7 dias de duração,
+                            e mais que isso! Somos heróis com variadas habilidades,
+                            estamos aqui para revolucionar o ecommerce brasileiro,
+                            inspirar novos empreendedores e abrir novos caminhos para aqueles
+                            que já estão desbravando essa vasto mundo! Através da disseminação
+                            de conteúdo de qualidade!
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-center">Make with <i class="fa fa-heart"></i> in SP</h4>
+                <br/>
+                <center>
+                    <i class="text-center">
+                        <span class="text-center">Tempo para essa página deixar de existir:</span><br/>
+                    </i>
+                </center>
+                <h2 class="text-center">00:00:00</h2>
+            </div>
+            <div class="col-md-4">
+                <div class="col-md-10"><%= render 'leads/form' %></div>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<%= debug(params) if Rails.env.development? %>
+<!-- <%= debug(params) if Rails.env.development? %>
 <% if Rails.env.development? %>
     <script>
       console.log("Controller: <%= controller_name %> | Action: <%= action_name %> | ID: <%= params[:id] if params[:id].present? %>");
     </script>
-<% end %>
+<% end %> -->

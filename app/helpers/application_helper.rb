@@ -5,7 +5,7 @@ module ApplicationHelper
   end
 
   def base_title
-    base_title = "GAMARA"
+    base_title = "7 DIAS PARA O SUCESSO"
   end
 
   def full_title(page_title)

@@ -1,5 +1,5 @@
-<header>
-  <nav class="navbar navbar-default">
+
+  <!-- <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="/">
@@ -20,5 +20,32 @@
         </ul>
       </div>
     </div>
-  </nav>
-</header>
+  </nav> -->
+<aside>
+    <!-- <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Quem Somos</a></li>
+        <li role="presentation"><a href="#">Quizz</a></li>
+    </ul> -->
+    <div class="col-md-4 sidebar">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="/"><%= image_tag 'logo.png', alt: '7 dias para o sucesso', class: 'logo' %></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <i><span>Tempo para essa página deixar de existir:</span><br/></i>
+                <h2>00:00:00</h2>
+            </div>
+        </div>
+        <div class="row banner">
+          <div class="col-md-10"><%= render 'leads/form' %></div>
+        </div>
+        <!-- <div class="row banner">
+            <div class="col-md-10 quizz">
+                <a href="./" class="btn">Faça o teste e descubra<br/>a melhor opção para você</a>
+            </div>
+        </div> -->
+    </div>
+</aside>

@@ -1,14 +1,14 @@
-<div class="well well-lg">
-  <h3 class="text-center mt0 mb0">Receber os conteúdos</h3>
+<div class="well well-lg newsletter">
+  <h3 class="text-center">Receba conteúdos exclusivos</h3>
   <% @lead = Lead.new %>
   <div class="form-lead">
     <%= simple_form_for @lead, url: leads_path, method: 'POST', remote: true, html: { class: 'form-horizontal' } do |f| %>
         <%= f.error_notification %>
-        <%= f.input :first_name, required: true, class: 'col-md-6', label: 'Nome', placeholder: 'Nome' %>
-        <%= f.input :last_name, required: true, class: 'col-md-6', label: 'Sobrenome', placeholder: 'Sobrenome' %>
-        <%= f.input :email, required: true, label: 'Email', placeholder: 'Email' %>
+        <%= f.input :first_name, required: true, class: 'col-md-6', label: false, placeholder: 'Nome' %>
+        <!-- <%= f.input :last_name, required: true, class: 'col-md-6', label: 'Sobrenome', placeholder: 'Sobrenome' %> -->
+        <%= f.input :email, required: true, label: false, placeholder: 'Email' %>
         <div class="text-center">
-          <%= f.button :submit, 'Quero receber o conteúdo!', class: 'btn-success' %>
+          <%= f.button :submit, 'Inscrever', class: 'btn-success' %>
         </div>
     <% end %>
   </div>
