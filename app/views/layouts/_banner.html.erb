@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="/"><%= image_tag 'logo_negativo.png', alt: '7 dias para o sucesso', class: 'logo' %></a>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h2>
+                            Somos uma iniciativa sem fins lucrativos,<br/>
+                            com o objetivo de revolucionar o cenário <br/>
+                            de e-commerce brasileiro, trazendo
+                            <br/> conteúdo 100% gratuito.
+                        </h2>
+                        <!-- <i><span>Tempo para essa página deixar de existir:</span><br/></i>
+                        <center>
+                            <h1><span class="timer"></span></h1>
+                        </center> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <div class="col-md-12"><%= render 'leads/form' %></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

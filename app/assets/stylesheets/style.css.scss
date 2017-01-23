@@ -8,6 +8,54 @@ hr {
     border-top: 1px solid #fac22e;
 }
 
+header {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow-y: hidden;
+    background: image-url('bg-pattern.png'), linear-gradient(to left, #35235f, #112c54);
+    color: #fff;
+
+    .header-content {
+        text-align: left;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .header-content .header-content-inner {
+        max-width: none;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .newsletter{
+        background: transparent;
+
+        h3{
+            font-size: 20px;
+            margin: 10px 0 30px 0;
+        }
+
+        .btn-success {
+            background: rgba(255,255,255, 0.30);
+            border: none;
+        }
+    }
+}
+
+.offset-left{
+    position: fixed;
+    left: -20px;
+    transition: 1s;
+}
+.offset-right{
+    position: fixed;
+    left: 0;
+    transition: 1s;
+}
+
 .sidebar{
     background-color: #ffffff;
 
@@ -247,6 +295,9 @@ h2.timer {
 
 /*Override bootstrap*/
 
+.navbar-default{
+    background: transparent;
+}
 .nav-tabs>li>a {
     color: #026b95;
 }

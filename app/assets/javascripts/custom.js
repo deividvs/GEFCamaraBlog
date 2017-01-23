@@ -8,6 +8,23 @@
 })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 
 
+$(function() {
+    $(window).scroll(function() {
+        var body = $(".navbar.navbar-default.navbar-fixed-top");
+        if(body.offset().top >= 50){
+            body.fadeOut();
+        }else if(body.offset().top <= 50){
+            body.fadeIn();
+        }
+
+        if(body.offset().top >= 100){
+            // $('aside').removeClass('offset-left');
+            // $('aside').addClass('offset-right');
+        }
+    });
+});
+
+
 
 function DiffDate(endTime){
     var dateDiff = Date.parse(endTime) - Date.parse(new Date());
