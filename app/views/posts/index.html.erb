@@ -4,7 +4,7 @@
 <% if @posts.size > 0 %>
 <div class="row blog">
     <div class="col-md-12">
-            <% @posts.each do |post| %>
+            <% @posts.each do |post, index| %>
             <!-- Lista de post  -->
                 <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
@@ -21,6 +21,10 @@
                       <span class="data pull-right"><%= post.created_at.to_formatted_s(:short) %></span>
                   </div>
                 </div>
+
+                <%if index % 3 == 0 do%>
+                    <div class="clear"></div>
+                <%end%>
             <% end %>
         </div>
     </div>
