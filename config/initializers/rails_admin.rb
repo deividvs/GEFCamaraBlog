@@ -49,6 +49,7 @@ RailsAdmin.config do |config|
   config.model Post do
     edit do
       field :title
+      field :category
       field :body, :wysihtml5 do
         config_options toolbar: { fa: true }, # use font-awesome instead of glyphicon
                        html: true, # enables html editor
