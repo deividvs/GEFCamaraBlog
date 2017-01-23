@@ -24,6 +24,23 @@ body{
     margin-top: 10px;
 }
 
+.blog-content{
+    max-width: 850px;
+
+    h3{
+        margin: 10px 0;
+    }
+
+    img{
+        margin: 10px;
+    }
+
+    p{
+        line-height: 1;
+        font-size: 15px;
+    }
+}
+
 aside{
     .newsletter{
         width: 100%;
