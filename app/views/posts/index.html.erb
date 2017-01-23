@@ -2,7 +2,7 @@
 <%= content_for :description, 'Blog - 7 DIAS PARA O SUCESSO' %>
 
 <% if @posts.size > 0 %>
-<div class="flex-row row blog">
+  <div class="flex-row row blog">
     <div class="col-md-12">
         <% @posts.each_with_index do |post, index| %>
         <!-- Lista de post  -->
@@ -23,6 +23,7 @@
             </div>
         <% end %>
     </div>
+  </div>
 <% else %>
 
 <% end %>
