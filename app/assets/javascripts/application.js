@@ -17,5 +17,4 @@
 //= require jquery.validate
 //= require jquery.validate.additional-methods
 //= require jquery.validate.localization/messages_pt_BR
-//= require turbolinks
 //= require_tree .

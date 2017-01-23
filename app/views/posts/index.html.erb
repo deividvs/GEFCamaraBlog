@@ -13,7 +13,7 @@
                 <% end %>
                 <div class="caption">
                   <h4><%= link_to post.title.to_s.capitalize, post_path(post) %></h4>
-                  <p><%= truncate(strip_tags(post.body), length: 100) %> <%= link_to 'Leia mais', post_path(post) %></p>
+                  <p><%= truncate(strip_tags(post.body), length: 150) %> <%= link_to 'Leia mais', post_path(post) %></p>
                 </div>
               </div>
               <div class="info">
