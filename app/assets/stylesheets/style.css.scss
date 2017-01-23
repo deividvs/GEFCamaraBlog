@@ -299,6 +299,48 @@ h2.timer {
 	width: 100%;
 }
 
+
+/*Media Query*/
+
+@media screen and (max-width: 991px) {
+    header{
+        .header-content {
+            text-align: center;
+            padding: 0;
+            height: 70vh;
+            .header-content-inner {
+                max-width: none;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .col-md-5{
+            .header-content {
+                height: 50vh;
+                text-align: center;
+            }
+            .header-content-inner {
+                position: relative;
+            }
+        }
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .blog .post{
+        max-width: 295px;
+    }
+
+    .col-md-12{
+        width: 100%;
+    }
+}
+
+
 /*Override bootstrap*/
 
 .navbar-default{

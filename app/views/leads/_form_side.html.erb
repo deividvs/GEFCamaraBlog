@@ -1,5 +1,5 @@
 <div class="well well-lg newsletter">
-  <h3 class="text-center">Receba conteúdo exclusivo</h3>
+  <h3 class="text-center">Saiba mais!<br/> Sobre nossa revolução.</h3>
   <% @lead = Lead.new %>
   <div class="form-lead">
     <%= simple_form_for @lead, url: leads_path, method: 'POST', remote: true, html: { class: 'form-horizontal', id: 'new_lead_side' } do |f| %>
