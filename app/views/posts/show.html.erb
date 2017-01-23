@@ -15,15 +15,17 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-          <%= image_tag @post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <%= @post.body.html_safe %>
-      </div>
+    <div class="row content">
+        <div class="row">
+          <div class="col-md-12">
+              <%= image_tag @post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <%= @post.body.html_safe %>
+          </div>
+        </div>
     </div>
   </div>
 </div>
