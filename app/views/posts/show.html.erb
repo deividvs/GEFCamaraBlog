@@ -1,5 +1,6 @@
 <%= content_for :title, @post.title %>
 <%= content_for :description, @post.title + ' - 7 DIAS PARA O SUCESSO' %>
+<%= content_for :og_image, @post.image.url(:original) %>
 
 
 <!-- Post show -->
