@@ -6,7 +6,7 @@
     <div class="col-md-12">
             <% @posts.each do |post, index| %>
             <!-- Lista de post  -->
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 post">
                   <div class="thumbnail">
                     <%= link_to post_path(post) do %>
                       <%= image_tag post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
@@ -22,7 +22,7 @@
                   </div>
                 </div>
 
-                
+
             <% end %>
         </div>
     </div>
