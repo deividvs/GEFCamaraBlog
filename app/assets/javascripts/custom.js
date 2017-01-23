@@ -31,7 +31,7 @@ $(function() {
         }
     });
 
-    $('.col-md-4.sidebar').height($('.flex-row.row.blog').height() + 20);
+    $('.col-md-4.sidebar').height($('.flex-row.row.blog, .blog-content').height() + 20);
 });
 
 
