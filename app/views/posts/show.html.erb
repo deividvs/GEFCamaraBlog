@@ -1,7 +1,7 @@
 <%= content_for :title, @post.title %>
 <%= content_for :description, @post.title + ' - 7 DIAS PARA O SUCESSO' %>
 <%= content_for :og_image, @post.image.url(:original) %>
-<%= content_for :og_description, truncate(strip_tags(@post.body).to_s, length: 150) %>
+<%= content_for :og_description, truncate(strip_tags(@post.body).to_s.gsub(/\s+/, ""), length: 150) %>
 
 <!-- Post show -->
 <div class="row blog-content">
