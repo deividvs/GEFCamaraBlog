@@ -34,8 +34,9 @@ function updateTime(){
     var minutes = diff.minutes();
     var seconds = diff.seconds();
 
-    $('.timer').html(days + ' DIAS <br/>' + (hours > 10 : '0'+hours : hours)
-        + ':' + (minutes > 10 : '0'+minutes : minutes) + ':' + (seconds > 10 : '0'+ seconds : seconds));
+    $('.timer').html(days + ' DIAS <br/>' + (hours > 10 ? '0'+hours : hours)
+        + ':' + (minutes > 10 ? '0'+minutes : minutes) + ':'
+        + (seconds > 10 ? '0'+ seconds : seconds));
 
     setTimeout(function(){updateTime(); }, 60);
 }
