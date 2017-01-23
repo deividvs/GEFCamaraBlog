@@ -10,7 +10,10 @@
         <div class="page-header">
           <h1>
             <%= @post.title.to_s.capitalize %>
-            <small class="pull-right"><i class="fa fa-calendar"></i><%= @post.created_at.to_formatted_s(:short) %></small>
+            <small class="pull-right">
+              <span class="text-danger show-category"><%= @post.category %></span>
+              <i class="fa fa-calendar"></i><%= @post.created_at.to_formatted_s(:short) %>
+            </small>
           </h1>
         </div>
       </div>
