@@ -346,6 +346,14 @@ h2.timer {
     }
 }
 
+@media screen and (max-width: 375px) {
+    *{
+        min-width: 0 !important;
+        max-width: 375px;
+        left: 0;
+    }
+}
+
 
 /*Override bootstrap*/
 
