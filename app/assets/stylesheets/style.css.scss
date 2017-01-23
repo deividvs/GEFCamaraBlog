@@ -224,8 +224,8 @@ h2.timer {
 	flex-wrap: wrap;
 }
 .flex-row > [class*='col-'] {
-	display: flex;
 	flex-direction: row;
+    flex-flow: row wrap;
 }
 
 .flex-row .thumbnail,
