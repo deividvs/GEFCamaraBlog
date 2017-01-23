@@ -22,21 +22,32 @@ body{
 
 .blog{
     margin-top: 10px;
+
+    h4{
+        a{
+            color: #33235e;
+        }
+        a:hover{
+            color: #e6be21;
+        }
+    }
 }
 
 .blog-content{
     max-width: 850px;
+    padding:10px;
 
-    h3{
+    h1, h3{
         margin: 10px 0;
+        color: #33235e;
     }
 
     img{
-        margin: 10px;
+        margin: 10px 0;
     }
 
     p{
-        line-height: 1;
+        line-height: 1.8;
         font-size: 15px;
     }
 }
@@ -50,10 +61,17 @@ aside{
         color: #fff;
         margin: 20px 0 ;
 
+        h3{
+            margin: 20px 0;
+        }
+
         .btn-success {
             background: rgba(255,255,255, 0.30);
             border: none;
         }
+    }
+    .well-lg{
+        padding-top: 0 !important;
     }
 }
 
@@ -97,13 +115,13 @@ footer{
     color:#fff;
     .footer-image{
         padding: 20px 0;
-        height: 330px;
+        min-height: 330px;
         background: linear-gradient(to left,
           rgba(53, 35, 95, 0.85),
           rgba(17, 44, 84, 0.85)
 
         ), image-url('footer.png');
-        background-pos: cover;
+        background-size: cover;
     }
 
     .well-lg{
