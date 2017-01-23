@@ -20,8 +20,8 @@
     </div>
     <div class="row content">
         <div class="row">
-          <div class="col-md-12">
-              <%= image_tag @post.image.url(:medium), alt: 'Post image', class: 'noticia' %>
+          <div class="col-md-12 text-center">
+              <%= image_tag @post.image.url(:original), alt: 'Post image', class: 'noticia img-responsive img-rounded' %>
           </div>
         </div>
         <div class="row">
