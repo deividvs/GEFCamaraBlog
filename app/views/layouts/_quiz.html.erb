@@ -1,0 +1,110 @@
+<div class="quiz-container">
+	<div class="quiz-header">
+		<h2>Quiz <span>Descubra qual tipo de plataforma e-commerce se mais se adequa a seu negócio.</span></h2>
+	</div>
+	<section>
+		<form id="theForm" class="simform">
+			<div class="simform-inner">
+				<ol class="questions">
+					<li>
+						<span><label for="q1">Qual o seu nome?</label></span>
+						<input id="q1" name="q1" type="text"/>
+					</li>
+					<li>
+						<span><label for="q2">Em quanto tempo você deseja ter sua loja no ar?</label></span>
+						<div class="ac-custom ac-radio ac-fill" autocomplete="off">
+							<ul>
+								<li><input id="q2_1" name="q2" type="radio"><label for="q2_1">Quero o mais rápido possível cadastrar meus produtos e começar a vender</label></li>
+								<li><input id="q2_2" name="q2" type="radio"><label for="q2_2">Não tenho pressa quero planejar para que a loja se adeque ao meu modelo de negócio</label></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<span><label for="q3">Investimento</label></span>
+						<div class="ac-custom ac-radio ac-fill" autocomplete="off">
+							<ul>
+								<li><input id="q3_1" name="q3" type="radio"><label for="q3_1">Tenho um valor reservado para investir no desenvolvimento da loja</label></li>
+								<li><input id="q3_2" name="q3" type="radio"><label for="q3_2">Busco uma solução barata sem mensalidades abusivas</label></li>
+								<li><input id="q3_3" name="q3" type="radio"><label for="q3_3">Prefiro pagar mensalidade para uma empresa especializada que possui soluções para os principais problemas do mercado</label></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<span><label for="q4">Hospedagem e manutenção</label></span>
+						<div class="ac-custom ac-radio ac-fill" autocomplete="off">
+							<ul>
+								<li><input id="q4_1" name="q4" type="radio"><label for="q4_1">Tenho alguém ou uma equipe para cuidar da hospedagem e manutenção</label></li>
+								<li><input id="q4_2" name="q4" type="radio"><label for="q4_2">Prefiro pagar uma empresa especializada</label></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<span><label for="q5">Tema</label></span>
+						<div class="ac-custom ac-radio ac-fill" autocomplete="off">
+							<ul>
+								<li><input id="q5_1" name="q5" type="radio"><label for="q5_1">Quero escolher um tema pronto gratuito</label></li>
+								<li><input id="q5_2" name="q5" type="radio"><label for="q5_2">Quero um tema pronto mas que eu possa ajustar para se adaptar a minha marca</label></li>
+								<li><input id="q5_3" name="q5" type="radio"><label for="q5_3">Tenho um designer que fará um tema exclusivo</label></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<span><label for="q6">Customização</label></span>
+						<div class="ac-custom ac-radio ac-fill" autocomplete="off">
+							<ul>
+								<li><input id="q6_1" name="q6" type="radio"><label for="q6_1">Desejo ter controle sobre cada mínimo detalhe</label></li>
+								<li><input id="q6_2" name="q6" type="radio"><label for="q6_2">Desejo apenas fazer pequenas personalizações</label></li>
+								<li><input id="q6_3" name="q6" type="radio"><label for="q6_3">Não preciso de nenhuma customização</label></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<span><label for="q7">Formas de pagamento</label></span>
+						<div class="ac-custom ac-radio ac-fill" autocomplete="off">
+							<ul>
+								<li><input id="q7_1" name="q7" type="radio"><label for="q7_1">Quero desenvolver minha própria integração direta com os bancos e emissoras</label></li>
+								<li><input id="q7_2" name="q7" type="radio"><label for="q7_2">Quero uma solução pronta que integre com os principais gateways de pagamento do mercado como PagSeguro, Mercado Pago, Paypal etc</label></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<span><label for="q8">Marketplace</label></span>
+						<div class="ac-custom ac-radio ac-fill" autocomplete="off">
+							<ul>
+								<li><input id="q8_1" name="q8" type="radio"><label for="q8_1">Desejo integrar meu site com Marketplaces como Mercado Livre, Facebook, Submarino etc</label></li>
+								<li><input id="q8_2" name="q8" type="radio"><label for="q8_2">Não faço questão mas se for um recurso disponível na plataforma posso utilizar</label></li>
+								<li><input id="q8_3" name="q8" type="radio"><label for="q8_3">Não tenho intenção de vender em Marketplaces</label></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<span><label for="q9">Loja física</label></span>
+						<div class="ac-custom ac-radio ac-fill" autocomplete="off">
+							<ul>
+								<li><input id="q9_1" name="q9" type="radio"><label for="q9_1">Possuo uma loja física e desejo integrar com meu sistema de controle de estoque</label></li>
+								<li><input id="q9_2" name="q9" type="radio"><label for="q9_2">Possuo uma loja física mas não faço questão de integrar o sistema de estoque</label></li>
+								<li><input id="q9_3" name="q9" type="radio"><label for="q9_3">Não possuo uma loja física</label></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<span><label for="q10">Preencha seu email e receba o resultado?</label></span>
+						<input id="q10" name="q10" type="email"/>
+					</li>
+				</ol><!-- /questions -->
+				<button class="submit" type="submit">Enviar</button>
+				<div class="controls">
+					<button class="next"></button>
+					<div class="progress"></div>
+					<span class="number">
+						<span class="number-current"></span>
+						<span class="number-total"></span>
+					</span>
+					<span class="error-message"></span>
+				</div><!-- / controls -->
+			</div><!-- /simform-inner -->
+			<span class="final-message"></span>
+		</form><!-- /simform -->
+	</section>
+</div><!-- /container -->
+<!-- <script src="js/index.js"></script> -->
