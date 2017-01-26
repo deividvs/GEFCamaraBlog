@@ -9,8 +9,6 @@ class PagesController < ApplicationController
     case params[:id]
       when 'sobre'
         'application_static'
-      when 'qual-a-melhor-plataforma-para-o-meu-negocio'
-        'application_static'
       else
         'application'
     end
