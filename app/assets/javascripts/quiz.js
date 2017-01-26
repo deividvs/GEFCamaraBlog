@@ -91,7 +91,7 @@
 
 		return this.each(function(){
 			this.setAttribute( "autocomplete", "off" )
-			
+
 			new stepsForm( this, {
 				onSubmit : function( form ) {
 					// hide form
@@ -154,7 +154,7 @@
 									plataforma.plataformas.map(function(item){
 										return '<li>' +
 											'<a href="' + item.link + '">' +
-												'<img src="/assets/plataformas/' + item.logo + '" />' +
+												'<img src="/plataformas/' + item.logo + '" />' +
 												'<span>' + item.link + '</span>'+
 											'</a>' +
 										'</li>';
