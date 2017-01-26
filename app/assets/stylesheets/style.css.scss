@@ -402,7 +402,16 @@ h2.timer {
         left: 0;
     }
 }
-
+@media screen and (max-height: 500px){
+header {
+    .row{
+        height: 1200px;
+    }
+    .header-content{
+        height: 140vh;
+    }
+}
+}
 
 /*Override bootstrap*/
 
