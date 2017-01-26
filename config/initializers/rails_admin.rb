@@ -51,7 +51,7 @@ RailsAdmin.config do |config|
       field :title
       field :category
       field :body, :wysihtml5 do
-        config_options toolbar: { fa: true }, # use font-awesome instead of glyphicon
+        config_options toolbar: { fa: true, html: true }, # use font-awesome instead of glyphicon
                        html: true, # enables html editor
                        parserRules: { tags: { p:1 } } # support for <p> in html mode
       end
