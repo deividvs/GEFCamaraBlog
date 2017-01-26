@@ -12,7 +12,7 @@
 				plataformas: [
 					{
 						nome: 'xtech commerce',
-						logo: 'logo-xtech.svg',
+						logo: 'logo-grey.svg',
 						link: 'http://bit.ly/2kolG8s'
 					},
 					{
@@ -148,19 +148,19 @@
 								return '';
 							}
 
-							/*return '<div class="resultado-plataformas">' +
+							return '<div class="resultado-plataformas">' +
 								'<h4>Selecionamos as principais plataformas do mercado para você:</h4>' +
 								'<ul>' +
 									plataforma.plataformas.map(function(item){
 										return '<li>' +
 											'<a href="' + item.link + '">' +
 												'<img src="/assets/plataformas/' + item.logo + '" />' +
-												'<span>' + item.nome + '</span>'+
+												'<span>' + item.link + '</span>'+
 											'</a>' +
 										'</li>';
 									}).join('\n')+
 								'</ul>' +
-							'</div>';*/
+							'</div>';
 						}())+
 						'</div>';
 

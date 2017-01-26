@@ -219,16 +219,13 @@ div.resultado-plataformas{
 
 	ul{
 		margin: 1em 0 0;
-		margin-left: -1.3em;
-		padding: 1em 0 0;
-		padding-left: 1.3em;
-		width: 113%;
+		padding: 1em 2em 0;
 		background-color: white;
 		overflow: auto;
 	}
 
 	li{
-		margin-bottom: 1.6em;
+		margin-bottom: 2em;
 		max-width: 400px;
 
 		a{
@@ -237,11 +234,11 @@ div.resultado-plataformas{
 
 		span{
 			vertical-align: middle;
-			margin-left: 30px;
 			color: #35235f;
 		}
 
 		img{
+			margin-right: 30px;
 			vertical-align: middle;
 			max-width: 50%;
 		}
