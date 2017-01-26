@@ -189,15 +189,17 @@ div.ac-custom{
 }
 
 .quiz-resultado{
-	max-height: 0;
+	max-height: 1000px;
 	font-size: .5em;
 	text-align:center;
-	overflow: hidden;
+	color: white;
+	//overflow: hidden;
 
-	transition: max-height .4s ease-in;
+	//transition: max-height .5s ease-in;
 
 	&.show{
-		max-height: 700px;
+		animation: resultadoIn .5s;
+		//max-height: 1000px;
 	}
 
 	h4{
@@ -212,6 +214,54 @@ div.ac-custom{
 
 .resultado-content{
 	text-align: justify;
+}
+
+div.resultado-plataformas{
+	margin-top: 2em;
+	text-align: left;
+
+	ul{
+		margin: 1em 0 0;
+		margin-left: -1.3em;
+		padding: 1em 0 0;
+		padding-left: 1.3em;
+		width: 113%;
+		background-color: white;
+		overflow: auto;
+	}
+
+	li{
+		margin-bottom: 1.6em;
+		max-width: 400px;
+
+		a{
+			display: block;
+		}
+
+		span{
+			vertical-align: middle;
+			margin-left: 30px;
+			color: #35235f;
+		}
+
+		img{
+			vertical-align: middle;
+			max-width: 50%;
+		}
+	}
+
+}
+
+@keyframes resultadoIn {
+	from {
+		overflow: hidden;
+		max-height: 0;
+	}
+
+	to {
+		overflow: hidden;
+		max-height: 1000px;
+	}
 }
 
 @keyframes radioIn {

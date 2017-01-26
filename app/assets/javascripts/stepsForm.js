@@ -115,6 +115,12 @@
 		// show the next question control first time the input gets focused
 		firstElInput.addEventListener( 'focus', onFocusStartFn );
 
+		if(firstElInput.type == 'text' || firstElInput.type == 'email'){
+			firstElInput.addEventListener( 'blur', function( ev ) {
+				self._nextQuestion();
+			});
+		}
+
 		// show next question
 		this.ctrlNext.addEventListener( 'click', function( ev ) {
 			ev.preventDefault();
@@ -187,7 +193,11 @@
 
 			var inputs = nextQuestion.querySelectorAll( 'input, textarea, select' );
 
-			if(inputs[0].type == 'radio'){
+			if(inputs[0].type == 'text' || inputs[0].type == 'email'){
+				inputs[0].addEventListener( 'blur', function( ev ) {
+					self._nextQuestion();
+				});
+			}else if(inputs[0].type == 'radio'){
 				var timeout = null;
 
 				inputs.forEach(function(el){
