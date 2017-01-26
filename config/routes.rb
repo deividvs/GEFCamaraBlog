@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   resource :leads, only: [:new, :create]
   resources :posts, only: [:index, :show]
-  resources :quiz, :path => "qual-a-melhor-plataforma-para-o-meu-negocio"
+  get "qual-a-melhor-plataforma-para-o-meu-negocio", to: 'quiz#index'
+  get 'quiz', to: 'quiz#index2'
 
   get "*id" => 'pages#show', as: :page, format: false
   #root to: 'pages#show', id: 'index'
