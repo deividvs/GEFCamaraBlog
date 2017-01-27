@@ -1,24 +1,41 @@
-# README
+# GAMARA BLOG
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# [7diasparaosucesso.com](http://www.7diasparaosucesso.com)
 
-Things you may want to cover:
+## Programming:
+* Adolfo Peccin
+* Alvaro Caxone
+* Eduardo Morango
+* Murilo Lucas
+* Rodrigo Azevedo
 
-* Ruby version
+## Ruby, Rails and PostgreSQL versions (Suggested use of RVM to handle ruby and gems)
+* Ruby 2.2.5
+* Rails 5.0.1
+* PostgreSQL 9.6.1
 
-* System dependencies
+## How to install project:
+    $ gem install bundler
+    $ bundle install
+    $ bundle exec rake db:create
+    $ bundle exec rake db:migrate
 
-* Configuration
+### bundle install issues
+http://stackoverflow.com/questions/33475709/install-therubyracer-gem-on-osx-10-11-el-capitan
 
-* Database creation
+## Facebook login works on localhost
+Open /etc/hosts file
+`sudo vim /etc/hosts`
 
-* Database initialization
+Put this on file
+`127.0.0.1	local.7diasparaosucesso.com`
 
-* How to run the test suite
+## Admin rules
+Save the Use instance
+user.role_id = 4
 
-* Services (job queues, cache servers, search engines, etc.)
+## Run project
+http://local.7diasparaosucesso.com:3000/
 
-* Deployment instructions
-
-* ...
+## Production
+We use Heroku for production
